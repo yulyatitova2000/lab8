@@ -30,12 +30,6 @@ public class ReflectionDemoTest {
         for(String str : test){
             assertTrue(result.contains(str));
         }
-
-
-
-
-
-
     }
 
     @Test

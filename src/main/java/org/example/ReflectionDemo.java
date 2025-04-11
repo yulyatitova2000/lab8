@@ -8,8 +8,8 @@ import java.util.List;
 public class ReflectionDemo {
     public static int getCountHuman(List<?> listObjects ){
         int result = 0;
-        for(int i = 0; i < listObjects.size(); i++){
-            if(listObjects.get(i) instanceof Human){
+        for (Object listObject : listObjects) {
+            if (listObject instanceof Human) {
                 result++;
             }
         }
@@ -36,6 +36,5 @@ public class ReflectionDemo {
         }
         return result;
     }
-
 }
 
